@@ -1,0 +1,58 @@
+import styled from 'styled-components';
+
+export const Items = styled.li`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3vw;
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  @media screen and (min-width: 480px) {
+    font-size: 1em;
+  }
+`;
+
+export const Link = styled.a`
+  color: rgba(191, 122, 158, 0.8);
+  transition: color 250ms linear;
+  &:hover,
+  &:focus {
+    color: green;
+  }
+`;
+
+export const ButtonRedact = styled.button`
+  padding: 2px 4px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  background-color: #ebf4f8;
+  color: rgba(191, 122, 158, 0.8);
+  margin-right: 5px;
+  transition: all 250ms linear;
+  &:hover,
+  &:focus {
+    border: 1px solid #18b711;
+    border-radius: 5px;
+    color: #ebf4f8;
+    background-color: #18b711;
+  }
+`;
+
+export const ButtonDelete = styled.button`
+  padding: 2px 4px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid rgba(191, 122, 158, 0.8);
+  border-radius: 5px;
+  background-color: #ebf4f8;
+  color: rgba(191, 122, 158, 0.8);
+  transition: all 250ms linear;
+  &:hover,
+  &:focus {
+    border: 1px solid #ca0505;
+    color: #ebf4f8;
+    background-color: #b71111;
+  }
+`;
